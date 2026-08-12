@@ -5,7 +5,7 @@ const crypto = require("crypto");
 const multer = require("multer");
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const botUploadDir = path.join(
     __dirname,
