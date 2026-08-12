@@ -1,0 +1,17 @@
+{
+  "name": "BOT HUB",
+  "short_name": "BOT HUB",
+  "description": "Plataforma para divulgação de bots",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/iconbothub.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
