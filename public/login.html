@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BOT HUB</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <main class="auth-page">
+
+        <div class="auth-box">
+            <div class="auth-logo"></div>
+
+            <img class="auth-logo" src="/assets/icon.jpg" alt="BOT HUB">
+            <h1>Bem-vindo</h1>
+            <p>Entre na sua conta do BOT HUB.</p>
+
+            <form id="loginForm">
+
+                <input
+                    id="loginEmail"
+                    type="email"
+                    placeholder="E-mail"
+                    required
+                >
+
+                <input
+                    id="loginPassword"
+                    type="password"
+                    placeholder="Senha"
+                    required
+                >
+
+                <button type="submit">
+                    Entrar
+                </button>
+
+            </form>
+
+            <div id="loginMessage"></div>
+
+            <p class="auth-link">
+                Ainda não possui uma conta?
+                <a href="/cadastro.html">Criar conta</a>
+            </p>
+        </div>
+
+    </main>
+
+    <script src="/js/auth.js"></script>
+</body>
+</html>

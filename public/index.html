@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BOT HUB</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<main class="app">
+
+    <header class="header">
+
+        <div>
+            <div class="brand-logo"><img src="/assets/icon.jpg" alt="BOT HUB"><span>BOT HUB</span></div>
+            <p>Descubra novos bots</p>
+        </div>
+
+        <button
+            class="profile-button"
+            onclick="irParaPerfil()"
+        >
+            
+        </button>
+
+    </header>
+
+    <section class="search">
+
+        <input
+            id="searchInput"
+            type="search"
+            placeholder=" Pesquisar bots..."
+        >
+
+    </section>
+
+    <section class="categories">
+
+        <h2>Categorias</h2>
+
+        <div class="category-list">
+
+            <button data-category="Todos">
+                Todos
+            </button>
+
+            <button data-category="IA">
+                 IA
+            </button>
+
+            <button data-category="WhatsApp">
+                 WhatsApp
+            </button>
+
+            <button data-category="Discord">
+                 Discord
+            </button>
+
+            <button data-category="Telegram">
+                 Telegram
+            </button>
+
+            <button data-category="Utilidades">
+                 Utilidades
+            </button>
+
+            <button data-category="RPG">
+                 RPG
+            </button>
+
+            <button data-category="Diversão">
+                 Diversão
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="featured">
+
+        <div class="section-title">
+
+            <h2> Bots disponíveis</h2>
+
+
+
+        </div>
+
+        <div id="botsContainer">
+
+            <div class="loading">
+                Carregando bots...
+            </div>
+
+        </div>
+
+    </section>
+
+    <nav class="bottom-nav">
+
+        <button class="active">
+            <span>Início</span>
+        </button>
+
+        <button onclick="publicarBot()">
+            <span>Publicar</span>
+        </button>
+
+        <button onclick="irParaPerfil()">
+            <span>Perfil</span>
+        </button>
+
+        <button onclick="location.reload()">
+            <span>Atualizar</span>
+        </button>
+
+    </nav>
+
+</main>
+
+<script src="/js/app.js"></script>
+
+</body>
+</html>

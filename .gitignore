@@ -1,0 +1,12 @@
+node_modules/
+.env
+
+# Dados locais
+database/*.json
+
+# Uploads enviados pelos usuários
+public/uploads/
+
+# Arquivos temporários
+*.log
+.DS_Store

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Perfil - BOT HUB</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+</head>
+
+<body>
+
+<main class="app">
+
+    <header class="profile-header">
+
+        <button
+            class="back-button"
+            onclick="window.location.href='/'"
+        >
+            ←
+        </button>
+
+        <h1>Meu perfil</h1>
+
+        <button
+            class="share-button"
+            onclick="sair()"
+        >
+            
+        </button>
+
+    </header>
+
+    <section id="profileContainer">
+
+        <div class="loading">
+            Carregando perfil...
+        </div>
+
+    </section>
+
+    <nav class="bottom-nav">
+
+        <button onclick="window.location.href='/'">
+            
+            <span>Início</span>
+        </button>
+
+        <button onclick="publicarBot()">
+            
+            <span>Publicar</span>
+        </button>
+
+        <button class="active">
+            
+            <span>Perfil</span>
+        </button>
+
+    
+        <button onclick="location.reload()">
+            <span>Atualizar</span>
+        </button>
+
+    </nav>
+
+</main>
+
+<script src="/js/perfil.js"></script>
+
+</body>
+</html>

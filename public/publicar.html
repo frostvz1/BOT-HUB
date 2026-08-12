@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Publicar Bot - BOT HUB</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<main class="auth-page">
+
+    <div class="auth-box">
+
+        <div class="auth-logo"></div>
+
+        <h1>Publicar bot</h1>
+
+        <p>
+            Divulgue seu bot para a comunidade.
+        </p>
+
+        <form id="publishBotForm">
+
+            <label class="image-upload">
+                <span>Foto do bot</span>
+
+                <input
+                    id="botImage"
+                    type="file"
+                    accept="image/jpeg,image/png,image/webp"
+                >
+
+                <small>
+                    JPG, PNG ou WEBP — máximo 5 MB
+                </small>
+            </label>
+
+
+            <input
+                id="botName"
+                type="text"
+                placeholder="Nome do bot"
+                required
+            >
+
+            <textarea
+                id="description"
+                placeholder="Descrição do bot"
+                required
+            ></textarea>
+
+            <select id="category" required>
+                <option value="">Categoria</option>
+                <option value="IA"> IA</option>
+                <option value="WhatsApp"> WhatsApp</option>
+                <option value="Discord"> Discord</option>
+                <option value="Telegram"> Telegram</option>
+                <option value="Utilidades"> Utilidades</option>
+                <option value="RPG"> RPG</option>
+                <option value="Diversão"> Diversão</option>
+            </select>
+
+            <select id="platform" required>
+                <option value="">Plataforma</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Discord">Discord</option>
+                <option value="Telegram">Telegram</option>
+                <option value="Web">Web</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <input
+                id="link"
+                type="url"
+                placeholder="Link para acessar o bot"
+                required
+            >
+
+            <input
+                id="tags"
+                type="text"
+                placeholder="Tags (ex: ia, diversão, rpg)"
+            >
+
+            <button type="submit">
+                 Publicar bot
+            </button>
+
+        </form>
+
+        <div id="publishMessage"></div>
+
+        <p class="auth-link">
+            <a href="/">← Voltar para o início</a>
+        </p>
+
+    </div>
+
+</main>
+
+<script src="/js/publish.js"></script>
+
+</body>
+</html>

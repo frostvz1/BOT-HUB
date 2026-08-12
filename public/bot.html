@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Bot - BOT HUB</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+</head>
+
+<body>
+
+<main class="app">
+
+    <header class="bot-header">
+
+        <button
+            class="back-button"
+            onclick="history.back()"
+        >
+            ←
+        </button>
+
+        <div class="brand-logo"><img src="/assets/icon.jpg" alt="BOT HUB"><span>BOT HUB</span></div>
+
+        <button
+            class="share-button"
+            onclick="compartilharBot()"
+        >
+            
+        </button>
+
+    </header>
+
+    <section id="botPage">
+
+        <div class="loading">
+            Carregando bot...
+        </div>
+
+    </section>
+
+    <nav class="bottom-nav">
+
+        <button onclick="window.location.href='/'">
+            
+            <span>Início</span>
+        </button>
+
+        <button onclick="publicarBot()">
+            
+            <span>Publicar</span>
+        </button>
+
+        <button onclick="perfil()">
+            
+            <span>Perfil</span>
+        </button>
+
+    
+        <button onclick="location.reload()">
+            <span>Atualizar</span>
+        </button>
+
+    </nav>
+
+</main>
+
+<script src="/js/bot.js"></script>
+
+</body>
+</html>
